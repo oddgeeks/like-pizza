@@ -1,13 +1,115 @@
-.Burger {
-    width:  100%;
-    margin: auto;
-    height: 250px;
-    overflow: scroll;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
+.plate{
+  width:600px;
+  height:600px;
+  border-radius:500px;
+  background:#4A1804;
+  position:relative;
+  left:100px;
 }
-
+.pizzabase1{
+  width: 0px;
+  height: 0px;
+  border-right: 280px solid transparent;     
+  border-top: 280px solid #E09B31;
+  border-left: 280px solid #E09B31;
+  border-bottom: 280px solid #E09B31;
+  border-top-left-radius: 280px;
+  border-top-right-radius:280px;
+  border-bottom-left-radius: 280px;
+  border-bottom-right-radius: 280px;
+  position:absolute;
+  margin:20px;
+  transform:rotate(-20deg);
+}
+.pizzabase2{
+  width: 0px;
+  height: 0px;
+  border-right: 260px solid transparent;     
+  border-top: 260px solid #FFC61C;
+  border-left: 260px solid #FFC61C;
+  border-bottom: 260px solid #FFC61C;
+  border-top-left-radius: 260px;
+  border-top-right-radius:260px;
+  border-bottom-left-radius: 260px;
+  border-bottom-right-radius: 260px;
+  transform:rotate(-20deg);
+  position:absolute;
+  top:40px;
+  left:40px;
+}
+.slicebase1{
+  width: 0;
+  height: 0;
+  border-left:240px solid transparent;       
+  border-right:240px solid transparent;     
+  border-top:260px solid #E09B31;
+  border-radius: 50%;
+  position:absolute;
+  top: 191px;
+  left: 300px;
+  transform:rotate(70deg);
+  }
+.slicebase2{
+  width: 0;
+  height: 0;
+  border-left:220px solid         transparent;       
+  border-right:220px solid transparent;     
+  border-top:240px solid #FFC61C;
+  border-radius: 50%;
+  position:absolute;
+  top: 204px;
+  left: 311px;
+  transform:rotate(70deg);
+}
+.bite-circle-1{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#4A1804;
+    position:absolute;
+    top:160px;
+    left:350px;
+}
+.bite-circle-2{
+width:180px;
+height:150px;
+border-radius:50%;
+background:#4A1804;
+position:absolute;
+top:180px;
+left:340px;
+z-index:2;
+}
+.bite-circle-3{
+width:100px;
+height:100px;
+border-radius:50%;
+background:#4A1804;
+position:absolute;
+top:280px;
+left:450px;
+z-index:2;
+}
+.handle{
+width:300px;
+height:80px;
+background:#4A1804;
+border-radius:50px;
+position:absolute;
+top:540px;
+left:460px;
+transform:rotate(40deg);
+z-index:-1;
+}
+.handlehole{
+    width:30px;
+    height:30px;
+    border-radius:50px;
+    background:white;
+    position:absolute;
+    top:620px;
+    left:660px;
+}
 @media (min-width: 500px) and (min-height: 400px) {
     .Burger {
         width: 350px;
