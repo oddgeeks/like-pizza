@@ -9,10 +9,10 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import {getIngredients} from '../../mockup';
 
 const INGREDIENT_PRICES = {
-    pepperoni: 0.5,
-    cheese: 0.5,
-    meat: 0.5,
-    bacon: 0.5
+    tomatoes: 0.5,
+    mushrooms: 0.5,
+    corns: 0.5,
+    vegies: 0.5
 };
 
 class PizzaBuilder extends Component {

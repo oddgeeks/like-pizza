@@ -3,10 +3,10 @@ import classes from './BuildControls.css'
 import BuildControl from './BuildControl/BuildControl';
 
 const controls = [
-    {label: 'Pepperoni', type: 'pepperoni'},
-    {label: 'Bacon', type: 'bacon'},
-    {label: 'Cheese', type: 'cheese'},
-    {label: 'Meat', type: 'meat'},
+    {label: 'Tomatoes', type: 'tomatoes'},
+    {label: 'Mushrooms', type: 'mushrooms'},
+    {label: 'Corns', type: 'corns'},
+    {label: 'Vegies', type: 'vegies'},
 ];
 
 const buildControls = (props) => (

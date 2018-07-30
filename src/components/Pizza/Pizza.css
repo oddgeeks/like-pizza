@@ -111,19 +111,19 @@ z-index:-1;
     left:660px;
 }
 @media (min-width: 500px) and (min-height: 400px) {
-    .Burger {
+    .plate .pizzabase1 .pizzabase2 .slicebase1 .slicebase2 .bite-circle-1 .bite-circle-2 .bite-circle-3 .handle .handlehole{
         width: 350px;
         height: 300px;
     }
 }
 @media (min-width: 500px) and (min-height: 401px) {
-    .Burger {
+    .plate .pizzabase1 .pizzabase2 .slicebase1 .slicebase2 .bite-circle-1 .bite-circle-2 .bite-circle-3 .handle .handlehole{
         width: 450px;
         height: 400px;
     }
 }
 @media (min-width: 1000px) and (min-height: 700px) {
-    .Burger {
+    .plate .pizzabase1 .pizzabase2 .slicebase1 .slicebase2 .bite-circle-1 .bite-circle-2 .bite-circle-3 .handle .handlehole{
         width: 700px;
         height: 600px;
     }

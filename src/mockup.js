@@ -2,9 +2,9 @@
 export const getIngredients = ()=>{
 
    return {
-        bacon: 0,
-        cheese: 0,
-        meat: 0,
-        pepperoni: 0
+    tomatoes: 0,
+    mushrooms: 0,
+    corns: 0,
+    vegies: 0
     };
 }

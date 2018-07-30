@@ -27,6 +27,7 @@ const pizza = (props) => {
                 </div>
                 <div className={classes.slicebase2}>
                 </div>
+                    {transformedIngredients}
                 <div className = {classes.handle}> </div>
                 <div className = {classes.handlehole}> </div>
              </div>
