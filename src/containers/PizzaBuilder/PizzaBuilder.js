@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Aux from '../../hoc/Aux';
+import Aux from '../../hoc/AuxObj';
 import Pizza from '../../components/Pizza/Pizza';
 import BuildControls from '../../components/Pizza/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -9,17 +9,13 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import {getIngredients} from '../../mockup';
 
 const INGREDIENT_PRICES = {
-    salad: 0.5,
-    cheese: 0.4,
-    meat: 1.3,
-    bacon: 0.7
+    pepperoni: 0.5,
+    cheese: 0.5,
+    meat: 0.5,
+    bacon: 0.5
 };
 
 class PizzaBuilder extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {...}
-    // }
     state = {
         ingredients:null,
         totalPrice: 4,
@@ -30,13 +26,6 @@ class PizzaBuilder extends Component {
     }
     componentDidMount() {
         this.setState({ingredients: getIngredients()});
-        // axios.get('https://react-my-burger-14dcb.firebaseio.com/Ingredients.json')
-        //      .then(response => {
-        //         this.setState({ingredients: response.data});
-        //      })
-        //      .catch(error => {
-        //          this.setState({error: true});
-        //      });
     }
     updatePurchaseState (ingredients) {
         const sum = Object.keys(ingredients)
@@ -90,7 +79,7 @@ purchaseCancelHandler = () => {
     this.setState({purchasing: false});
 }
 purchaseContinueHandler = () => {
-    //alert('You continue');
+
     this.setState({loading: true});
 
     const order = {
@@ -122,15 +111,16 @@ purchaseContinueHandler = () => {
         let pizza = this.state.error? <p> Ingredients cant be loaded </p> : <Spinner />
 
         if(this.state.ingredients) {
+            debugger;
             pizza =  (
                 <Aux>
                     <Pizza ingredients = {this.state.ingredients}/>
                     <BuildControls ingredientAdded = {this.addIngredientHandler} 
-                   ingredientRemoved = {this.removeIngredientHandler}
-                   disabled= {disabledInfo}
-                   purchaseable={this.state.purchaseable}
-                   ordered = {this.purchaseHandler}
-                   price = {this.state.totalPrice}/>
+                        ingredientRemoved = {this.removeIngredientHandler}
+                        disabled= {disabledInfo}
+                        purchaseable={this.state.purchaseable}
+                        ordered = {this.purchaseHandler}
+                        price = {this.state.totalPrice}/>
                 </Aux>
                 );
                 orderSummary = <OrderSummary 
