@@ -110,6 +110,9 @@ z-index:-1;
     top:620px;
     left:660px;
 }
+.addmessage {
+    display: table-caption
+}
 @media (min-width: 500px) and (min-height: 400px) {
     .plate .pizzabase1 .pizzabase2 .slicebase1 .slicebase2 .bite-circle-1 .bite-circle-2 .bite-circle-3 .handle .handlehole{
         width: 350px;

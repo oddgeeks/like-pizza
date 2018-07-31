@@ -18,7 +18,7 @@ const INGREDIENT_PRICES = {
 class PizzaBuilder extends Component {
     state = {
         ingredients:null,
-        totalPrice: 4,
+        totalPrice: 0,
         purchaseable: false,
         purchasing: false,
         loading: false,
