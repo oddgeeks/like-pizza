@@ -1,13 +1,9 @@
 import React from 'react';
 import classes from './BuildControls.css'
 import BuildControl from './BuildControl/BuildControl';
+import {getIngredientsControl} from '../../../mockup';
 
-const controls = [
-    {label: 'Tomatoes', type: 'tomatoes'},
-    {label: 'Mushrooms', type: 'mushrooms'},
-    {label: 'Corns', type: 'corns'},
-    {label: 'Vegies', type: 'vegies'},
-];
+const controls = getIngredientsControl();
 
 const buildControls = (props) => (
     <div className={classes.BuildControls}> 
@@ -16,7 +12,6 @@ const buildControls = (props) => (
             <BuildControl 
                 key={ctrl.label} 
                 label={ctrl.label}
-                // type ={ctrl.type}
                 added={() => props.ingredientAdded(ctrl.type)}
                 removed= {() => props.ingredientRemoved(ctrl.type)}
                 disabled = {props.disabled[ctrl.type]} />

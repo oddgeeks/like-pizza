@@ -6,14 +6,9 @@ import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Pizza/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import {getIngredients} from '../../mockup';
+import {getIngredientsCount, getIngredientsPrices} from '../../mockup';
 
-const INGREDIENT_PRICES = {
-    tomatoes: 0.5,
-    mushrooms: 0.5,
-    corns: 0.5,
-    vegies: 0.5
-};
+const INGREDIENT_PRICES = getIngredientsPrices();
 
 class PizzaBuilder extends Component {
     state = {
@@ -25,7 +20,7 @@ class PizzaBuilder extends Component {
         error: false
     }
     componentDidMount() {
-        this.setState({ingredients: getIngredients()});
+        this.setState({ingredients: getIngredientsCount()});
     }
     updatePurchaseState (ingredients) {
         const sum = Object.keys(ingredients)
@@ -79,12 +74,19 @@ purchaseCancelHandler = () => {
     this.setState({purchasing: false});
 }
 purchaseContinueHandler = () => {
-
     this.setState({loading: true});
-
+    //Process pizza simulation.
+    setTimeout(
+        function() {
+            this.setState({loading: false}); 
+            this.purchaseCancelHandler();
+            alert("Your order has been placed");
+            window.location = '/';
+        }
+        .bind(this),2000
+    );
 }
-    render () {
-        
+    render () {        
         const disabledInfo = {
             ...this.state.ingredients
         };
