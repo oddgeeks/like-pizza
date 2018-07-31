@@ -28,13 +28,92 @@ class PizzaIngredient extends Component {
                 </div>;
             break;
             case ('mushrooms'):
-                ingredient = <div className = {classes.Cheese}> </div>;
+                ingredient = <div className = {classes.mushrooms}> 
+                 <div className = {classes.cup1}>
+                </div>
+                <div className = {classes.stem1}>
+                </div>
+                <div className = {classes.cup2}>
+                </div>
+                <div className = {classes.stem2}>
+                </div>
+                <div className = {classes.cup3}>
+                </div>
+                <div className = {classes.stem3}>
+                </div>
+                <div className = {classes.cup4}>
+                </div>
+                <div className = {classes.stem4}>
+                </div>
+                <div className = {classes.cup5}>
+                </div>
+                <div className = {classes.stem5}>
+                </div>
+                <div className = {classes.cup6}>
+                </div>
+                <div className = {classes.stem6}>
+                </div>
+                <div className = {classes.cup7}>
+                </div>
+                <div className = {classes.stem7}>
+                </div>
+                </div>;
             break;
             case ('corns'):
-                ingredient = <div className = {classes.Bacon}> </div>;
+                ingredient = <div className = {classes.corns}> 
+                	<div className = {classes.corn1}>
+                    </div>
+                    <div className = {classes.corn2}>
+                    </div>
+                    <div className = {classes.corn3}>
+                    </div>
+                    <div className = {classes.corn4}>
+                    </div>
+                    <div className = {classes.corn5}>
+                    </div>
+                    <div className = {classes.corn6}>
+                    </div>
+                    <div className = {classes.corn7}>
+                    </div>
+                    <div className = {classes.corn8}>
+                    </div>
+                    <div className = {classes.corn9}>
+                    </div>
+                    <div className = {classes.corn10}>
+                    </div>
+                    <div className = {classes.corn11}>
+                    </div>
+                </div>;
             break;
             case ('vegies'):
-                ingredient = <div className = {classes.Salad}> </div>;
+                ingredient = <div className = {classes.vegies}> 
+                	<div className = {classes.veg1}>
+                    </div>
+                    <div className = {classes.veg2}>
+                    </div>
+                    <div className = {classes.veg3}>
+                    </div>
+                    <div className = {classes.veg4}>
+                    </div>
+                    <div className = {classes.veg5}>
+                    </div>
+                    <div className = {classes.veg6}>
+                    </div>
+                    <div className = {classes.veg7}>
+                    </div>
+                    <div className = {classes.veg8}>
+                    </div>
+                    <div className = {classes.veg9}>
+                    </div>
+                    <div className = {classes.veg10}>
+                    </div>
+                    <div className = {classes.veg11}>
+                    </div>
+                    <div className = {classes.veg12}>
+                    </div>
+                    <div className = {classes.veg13}>
+                    </div>
+                </div>;
             break;
 
             default:

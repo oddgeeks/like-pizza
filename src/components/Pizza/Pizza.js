@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from './Pizza.css';
 import PizzaIngredient from './PizzaIngredient/PizzaIngredient';
+import PizzaPieceIngredient from './PizzaPieceIngredient/PizzaPieceIngredient';
 
 const pizza = (props) => {
+    //Ingredients big piece of pizza
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
             return [...Array(props.ingredients[igKey])].map((_, i) => {
@@ -10,7 +12,17 @@ const pizza = (props) => {
             });
         }).reduce((arr, el) => {
             return arr.concat(el)
-        },[]);     
+        },[]);
+        
+        let transformedPieceIngredients = Object.keys(props.ingredients)
+        .map(igKey => {
+            return [...Array(props.ingredients[igKey])].map((_, i) => {
+                return <PizzaPieceIngredient key={igKey+i} type = {igKey} />;
+            });
+        }).reduce((arr, el) => {
+            return arr.concat(el)
+        },[]);
+
         if(transformedIngredients.length === 0) {
             transformedIngredients = <p> Please start adding ingredients! </p>
         }
@@ -27,7 +39,7 @@ const pizza = (props) => {
                 </div>
                 <div className={classes.slicebase2}>
                 </div>
-                    {transformedIngredients}
+                    {transformedPieceIngredients}
                 <div className = {classes.handle}> </div>
                 <div className = {classes.handlehole}> </div>
              </div>

@@ -82,21 +82,6 @@ purchaseContinueHandler = () => {
 
     this.setState({loading: true});
 
-    const order = {
-        ingredients: this.state.ingredients,
-        price: this.state.totalPrice,
-        customer: {
-            name: 'Manuel Bautista',
-            address: {
-                street: "test",
-                zipCode: "4562",
-                country: 'testttt'
-            },
-            email: 'test@test.com'
-        },
-        deliveryMethod: 'fastest'
-    }
-
 }
     render () {
         

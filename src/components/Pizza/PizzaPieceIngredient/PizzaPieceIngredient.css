@@ -1,0 +1,70 @@
+.tomatoes {
+
+}
+
+  .tomato9{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#D90404;
+    position:absolute;
+    top:179px;
+    left:501px;
+  }
+  .tomato10{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#D90404;
+    position:absolute;
+    top:281px;
+    left:460px;
+    }
+    .mushrooms {
+
+    }
+    .cup8{
+      height:40px;
+      width:90px;
+      border-radius: 90px 90px 0 0;
+      background:#b49989;
+       position:absolute;
+      top:263px;
+      left:549px;
+      transform:rotate(0deg);
+     z-index:1;
+   }
+   .stem8{
+   height:50px;
+   width:30px;
+   background:#c3b5ae;
+   position:absolute;
+   top:299px;
+   left:579px;
+    transform:rotate(0deg);
+    }
+    .corns {
+
+    }
+    .corn11 {
+        width: 30px;
+          height: 30px;
+          border-radius:50%;
+         background:yellow;
+          position:absolute;
+          top:200px;
+          left:520px;
+            
+    }
+    .vegies{
+
+    }
+    .veg14{
+      height:50px;
+      width:20px;
+      background:green;
+      position:absolute;
+      top:344px;
+      left:553px;
+      transform:rotate(160deg);
+    }
