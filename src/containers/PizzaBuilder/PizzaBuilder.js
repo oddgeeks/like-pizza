@@ -96,7 +96,6 @@ purchaseContinueHandler = () => {
         let pizza = this.state.error? <p> Ingredients cant be loaded </p> : <Spinner />
 
         if(this.state.ingredients) {
-            debugger;
             pizza =  (
                 <Aux>
                     <Pizza ingredients = {this.state.ingredients}/>
@@ -109,10 +108,10 @@ purchaseContinueHandler = () => {
                 </Aux>
                 );
                 orderSummary = <OrderSummary 
-                ingredients={this.state.ingredients}
-                purchaseCancelled = {this.purchaseCancelHandler}
-                purchaseContinued = {this.purchaseContinueHandler}
-                price = {this.state.totalPrice}
+                    ingredients={this.state.ingredients}
+                    purchaseCancelled = {this.purchaseCancelHandler}
+                    purchaseContinued = {this.purchaseContinueHandler}
+                    price = {this.state.totalPrice}
                 />;
         }
         

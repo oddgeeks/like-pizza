@@ -8,3 +8,16 @@ export const getIngredients = ()=>{
     vegies: 0
     };
 }
+
+export const fetchDoughTypes = () => {
+    return [{
+        id: 1,
+        name: 'Thin',
+        description: 'Thin and crusty pizza dough'
+        },
+        {
+        id: 2,
+        name: 'Thick',
+        description: 'Thick and soft pizza dough'
+        }];
+    };
