@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classes from './PizzaIngredient.css';
 
-class PizzaIngredient extends Component {
+export class PizzaIngredient extends Component {
   render() {
     let ingredient = null;
 
@@ -23,7 +23,7 @@ class PizzaIngredient extends Component {
                     </div>
                     <div  className = {classes.tomato7}>
                     </div>
-                    <div className = {classes.tomato8}>
+                    <div className = {classes.tomato8} id="tomato8">
                     </div>
                 </div>;
             break;
@@ -55,7 +55,7 @@ class PizzaIngredient extends Component {
                 </div>
                 <div className = {classes.cup7}>
                 </div>
-                <div className = {classes.stem7}>
+                <div className = {classes.stem7} id="stem7">
                 </div>
                 </div>;
             break;
@@ -81,7 +81,7 @@ class PizzaIngredient extends Component {
                     </div>
                     <div className = {classes.corn10}>
                     </div>
-                    <div className = {classes.corn11}>
+                    <div className = {classes.corn11} id="corn11">
                     </div>
                 </div>;
             break;
@@ -111,7 +111,7 @@ class PizzaIngredient extends Component {
                     </div>
                     <div className = {classes.veg12}>
                     </div>
-                    <div className = {classes.veg13}>
+                    <div className = {classes.veg13} id="veg13">
                     </div>
                 </div>;
             break;
