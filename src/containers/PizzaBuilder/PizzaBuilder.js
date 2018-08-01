@@ -10,7 +10,7 @@ import {getIngredientsCount, getIngredientsPrices} from '../../mockup';
 
 const INGREDIENT_PRICES = getIngredientsPrices();
 
-class PizzaBuilder extends Component {
+export class PizzaBuilder extends Component {
     state = {
         ingredients:null,
         totalPrice: 0,
